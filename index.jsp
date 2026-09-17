@@ -1,4 +1,8 @@
-﻿<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"
+﻿<%@ page import="config.ConexionBD" %>
+<%@ page import="modelos.Propiedad" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"
     import="java.sql.Connection, java.sql.PreparedStatement, java.sql.ResultSet, java.sql.SQLException,
             java.util.ArrayList, java.util.LinkedHashMap, java.util.List, java.util.Map,
             java.text.NumberFormat, java.util.Locale, java.net.URLEncoder,
