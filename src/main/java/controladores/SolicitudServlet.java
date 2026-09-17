@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import modelos.Solicitud;
 import util.AuditoriaUtil;
 import util.AuthUtil;

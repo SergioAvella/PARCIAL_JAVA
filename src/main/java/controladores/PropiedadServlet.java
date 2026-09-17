@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import modelos.ImagenPropiedad;
 import modelos.Propiedad;
 import util.AuditoriaUtil;

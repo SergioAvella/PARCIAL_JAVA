@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import modelos.Auditoria;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

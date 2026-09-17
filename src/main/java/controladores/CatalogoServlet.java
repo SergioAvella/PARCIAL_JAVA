@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import modelos.Caracteristica;
 import modelos.Ciudad;
 import modelos.TipoPropiedad;

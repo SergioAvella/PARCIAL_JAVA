@@ -10,7 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import util.AuditoriaUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

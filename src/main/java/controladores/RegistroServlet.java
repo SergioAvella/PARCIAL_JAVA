@@ -1,6 +1,6 @@
 package controladores;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import util.PasswordUtil;
 
 import java.io.IOException;

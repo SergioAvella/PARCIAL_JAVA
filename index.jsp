@@ -1,12 +1,17 @@
-﻿<%@ page import="config.ConexionBD" %>
+﻿<%@ page import="db.ConexionBD" %>
 <%@ page import="modelos.Propiedad" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"
-    import="java.sql.Connection, java.sql.PreparedStatement, java.sql.ResultSet, java.sql.SQLException,
-            java.util.ArrayList, java.util.LinkedHashMap, java.util.List, java.util.Map,
-            java.text.NumberFormat, java.util.Locale, java.net.URLEncoder,
-            config.ConexionBD, modelos.Propiedad" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="java.util.LinkedHashMap" %>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.text.NumberFormat" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.net.URLEncoder" %>
 <%@ include file="/WEB-INF/jspf/header.jspf" %>
 <%@ include file="/WEB-INF/jspf/navbar.jspf" %>
 

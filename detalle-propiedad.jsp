@@ -2,7 +2,7 @@
     import="java.text.NumberFormat, java.util.Locale,
             java.util.ArrayList, java.util.LinkedHashMap, java.util.List, java.util.Map,
             java.sql.Connection, java.sql.PreparedStatement, java.sql.ResultSet, java.sql.SQLException,
-            config.ConexionBD" %>
+            db.ConexionBD" %>
 <%@ include file="/WEB-INF/jspf/header.jspf" %>
 <%@ include file="/WEB-INF/jspf/navbar.jspf" %>
 

@@ -1,6 +1,6 @@
 package controladores;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import util.AuditoriaUtil;
 import util.AuthUtil;
 import util.PasswordUtil;

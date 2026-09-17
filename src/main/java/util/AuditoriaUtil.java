@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import config.ConexionBD;
+import db.ConexionBD;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**
