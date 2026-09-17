@@ -1,0 +1,146 @@
+/* =====================================================================
+   Inmobiliaria UTS - Estilos personalizados (CSS3) sobre Bootstrap 5
+   ===================================================================== */
+
+/* ---- Paleta corporativa inmobiliaria ---- */
+:root {
+    --color-primario: #14532d;        /* Verde corporativo */
+    --color-primario-oscuro: #0d3b1f;
+    --color-secundario: #b45309;      /* Ámbar/dorado */
+    --color-fondo: #f6f8f7;
+    --color-texto: #212529;
+    --sombra-suave: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+    --sombra-media: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+    --radio-tarjeta: 0.75rem;
+}
+
+/* ---- Tipografía y fondo global ---- */
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    transition: color 0.15s ease-in-out;
+}
+
+/* ---- Sobreescritura de utilidades de Bootstrap ---- */
+.bg-primary {
+    background-color: var(--color-primario) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--color-primario-oscuro);
+    border-color: var(--color-primario-oscuro);
+}
+
+.btn-outline-primary {
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.text-primary,
+.link-primary {
+    color: var(--color-primario) !important;
+}
+.text-success {
+    color: #166534 !important;
+}
+
+.navbar {
+    box-shadow: var(--sombra-suave);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.2rem rgba(20, 83, 45, 0.25);
+}
+
+/* ---- Tarjetas con sombra y esquinas redondeadas ---- */
+.card,
+.card-hover {
+    border-radius: var(--radio-tarjeta);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card.shadow-sm,
+.shadow-sm {
+    box-shadow: var(--sombra-suave) !important;
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-media);
+}
+
+.propiedad-card .card-body {
+    min-height: 170px;
+}
+.propiedad-card .card-footer {
+    background-color: #fff;
+}
+
+.producto-card:hover {
+    box-shadow: var(--sombra-media);
+}
+.producto-card .card-title {
+    color: var(--color-primario-oscuro);
+}
+
+/* ---- Hero y buscador ---- */
+.hero-filtros .form-control,
+.hero-filtros .form-select {
+    height: 2.75rem;
+}
+
+/* ---- Utilidades personalizadas ---- */
+.texto-primario { color: var(--color-primario); }
+.fondo-primario-suave { background-color: #f0f7f2; }
+.mt-auto-custom { margin-top: auto; }
+
+.precio-inmueble {
+    font-weight: 700;
+    color: #166534;
+}
+
+.estado-badge { font-size: 0.8rem; }
+
+.alerta-403 {
+    background: linear-gradient(135deg, #fdf0ef 0%, #ffffff 100%);
+    border: 1px solid #f5c2c7;
+}
+
+.imagen-placeholder {
+    background: linear-gradient(135deg, var(--color-primario-oscuro), var(--color-primario));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 575.98px) {
+    .display-5 { font-size: 2.2rem; }
+    .display-6 { font-size: 1.9rem; }
+}
+
+/* ---- Accesibilidad: foco visible ---- */
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-secundario);
+    outline-offset: 2px;
+}

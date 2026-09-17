@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar aplicacion (javac -> WEB-INF/classes)",
+            "detail": "Compila todos los fuentes de src/main/java hacia WEB-INF/classes con el classpath de jakarta.servlet*, jsp/el-api y el driver MySQL.",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "Get-ChildItem -Recurse -Filter *.java src | Select-Object -ExpandProperty FullName | Set-Content -Encoding ascii build.sources.txt; javac -encoding UTF-8 -proc:none -cp '..\\..\\lib\\servlet-api.jar;..\\..\\lib\\el-api.jar;..\\..\\lib\\jsp-api.jar;WEB-INF\\lib\\mysql-connector-j-26.7.0.jar' -d 'WEB-INF\\classes' '@build.sources.txt'; Remove-Item build.sources.txt -ErrorAction SilentlyContinue"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$javac"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        }
+    ]
+}

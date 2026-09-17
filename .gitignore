@@ -1,0 +1,16 @@
+# Credenciales de base de datos (nunca versionar)
+WEB-INF/classes/config.properties
+
+# Artefactos de compilación
+WEB-INF/classes/**/*.class
+
+# Archivos subidos por los usuarios en local
+uploads/*
+!uploads/.gitkeep
+
+# IDE
+.vscode/*.log
+
+# Sistema
+Thumbs.db
+.DS_Store

@@ -1,0 +1,40 @@
+{
+    "files.encoding": "utf8",
+    "files.eol": "auto",
+    "files.exclude": {
+        "**/WEB-INF/classes/**": true,
+        "**/build.sources.txt": true
+    },
+
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ],
+    "java.project.outputPath": "WEB-INF/classes",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.dependency.showMembers": true,
+
+    "java.project.referencedLibraries": [
+        "WEB-INF/lib/*.jar",
+        "../../lib/servlet-api.jar",
+        "../../lib/el-api.jar",
+        "../../lib/jsp-api.jar"
+    ],
+    "java.debug.settings.showHex": true,
+
+    "java.project.buildOutput": true,
+    "java.format.comments.enabled": true,
+    "editor.formatOnSave": false,
+
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
+
+    "cSpell.words": [
+        "inmobiliaria",
+        "ConexionBD",
+        "PasswordUtil",
+        "FiltroAutenticacion",
+        "CatalogoServlet",
+        "AuditoriaServlet",
+        "PBKDF2"
+    ]
+}

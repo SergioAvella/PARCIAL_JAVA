@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Plataforma inmobiliaria para publicar y gestionar propiedades, citas y solicitudes.">
+    <meta name="author" content="Inmobiliaria UTS">
+    <title>${param.titulo != null ? param.titulo : 'Inmobiliaria UTS'}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">

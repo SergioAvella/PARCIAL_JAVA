@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------
+# PLANTILLA de configuración de conexión a base de datos
+# 1. Copie este archivo a WEB-INF/classes/config.properties
+# 2. Sustituya los valores por los de su entorno MySQL
+# 3. El archivo WEB-INF/classes/config.properties NO se versiona
+#
+# Precedencia: variables de entorno (Railway: MYSQL_URL/DATABASE_URL,
+#              MYSQLHOST, MYSQLPORT, MYSQLDATABASE, MYSQLUSER, MYSQLPASSWORD;
+#              locales: DB_URL, DB_USER, DB_PASSWORD)
+#              > config.properties > valores por defecto en ConexionBD.java
+# 
+# NOTA: los caracteres especiales de la URL JDBC (&, =, ?) se escriben
+#       tal cual; Properties los lee correctamente.
+# ---------------------------------------------------------------------
+db.url=jdbc:mysql://localhost:3306/inmobiliaria_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+db.user=su_usuario_mysql
+db.password=su_contrasena_mysql
